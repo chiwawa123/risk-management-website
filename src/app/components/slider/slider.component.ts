@@ -16,22 +16,22 @@ export class SliderComponent implements OnInit, OnDestroy {
       image: "assets/images/7.jpg",
       title: "Building Risk Intelligence",
       subtitle: "Proactive risk management for a secure future",
-      buttonText: "Learn More",
-      buttonLink: "/about",
+      buttonText: "",
+      buttonLink: "",
     },
     {
       image: "assets/images/4.jpg",
       title: "Identify. Assess. Mitigate.",
       subtitle: "Comprehensive risk management solutions",
-      buttonText: "Our Services",
-      buttonLink: "/services",
+      buttonText: "",
+      buttonLink: "",
     },
     {
       image: "assets/images/3.jpg",
       title: "Protecting What Matters",
       subtitle: "Strategic risk oversight for institutional excellence",
-      buttonText: "Contact Us",
-      buttonLink: "/contact",
+      buttonText: "",
+      buttonLink: "",
     },
   ]
 
