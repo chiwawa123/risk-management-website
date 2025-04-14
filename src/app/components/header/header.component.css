@@ -1,0 +1,52 @@
+.contact {
+  padding: 2px 14px;
+  border-radius: 90px;
+  background: #ffffff;
+  border: 2px solid #24b0ed;
+  font-family: Poppins;
+  color: #24b0ed;
+}
+
+
+/* Fancy hover underline animation */
+.nav-link {
+  position: relative;
+  color: #4B5563; /* gray-600 */
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #24b0ed;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #24b0ed;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.active-nav::after {
+  width: 100%;
+}
+
+.active-nav {
+  color: #24b0ed;
+  font-weight: 600;
+}
+
+/* Mobile nav links */
+.mobile-link {
+  display: block;
+  color: #4B5563;
+  transition: color 0.2s;
+}
+
+.mobile-link:hover {
+  color: #24b0ed;
+}

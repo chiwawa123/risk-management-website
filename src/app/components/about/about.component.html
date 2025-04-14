@@ -1,0 +1,82 @@
+<section class="relative py-24 bg-gradient-to-br from-white via-sky-50 to-white text-gray-800 overflow-hidden">
+  <!-- Decorative Blur Circles -->
+  <div class="absolute -top-32 -left-32 w-96 h-96 bg-[#24b0ed] opacity-20 rounded-full blur-[120px] pointer-events-none"></div>
+  <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-sky-300 opacity-10 rounded-full blur-2xl pointer-events-none"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+      <!-- Image Column -->
+      <div class="lg:col-span-6 relative group">
+        <div class="rounded-3xl overflow-hidden shadow-xl transition-transform duration-500 group-hover:scale-[1.02]">
+          <img src="assets/images/risk.jpeg" alt="Risk Management" class="w-full h-auto object-cover rounded-3xl">
+        </div>
+        <div class="absolute -bottom-6 -right-6 bg-white bg-opacity-60 backdrop-blur-md border border-white border-opacity-30 text-[#24b0ed] py-4 px-6 rounded-xl shadow-md rotate-2 hidden md:block">
+          <span class="text-xl font-bold tracking-wide">Building Risk Intelligence</span>
+        </div>
+      </div>
+
+      <!-- Content Column -->
+      <div class="lg:col-span-6">
+        <h2 class="text-4xl lg:text-5xl font-extrabold mb-4 text-gray-900">
+          About Us
+        </h2>
+        <div class="w-20 h-1 bg-[#24b0ed] mb-8 rounded-full"></div>
+
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+          Our Risk Management Unit champions a proactive, resilient culture across the University. We ensure that risks are not only managed—but transformed into opportunities.
+        </p>
+
+        <p class="text-lg text-gray-600 mb-10 leading-relaxed">
+          Every staff member is empowered to think critically, act decisively, and elevate risk-awareness into a daily practice. Together, we’re building a smarter, safer future.
+        </p>
+
+        <!-- Tabs -->
+        <div class="mb-6">
+          <nav class="flex flex-wrap gap-4 text-sm font-medium">
+            <button (click)="activeTab = 'values'" [ngClass]="activeTab === 'values' ? 'bg-[#24b0ed] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="py-2 px-4 rounded-full transition-all">
+              Values
+            </button>
+            <button (click)="activeTab = 'vision'" [ngClass]="activeTab === 'vision' ? 'bg-[#24b0ed] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="py-2 px-4 rounded-full transition-all">
+              Vision
+            </button>
+            <button (click)="activeTab = 'mission'" [ngClass]="activeTab === 'mission' ? 'bg-[#24b0ed] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'" class="py-2 px-4 rounded-full transition-all">
+              Mission
+            </button>
+          </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div>
+          <div *ngIf="activeTab === 'values'" class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-gray-500 text-white rounded-full text-sm">Integrity</span>
+            <span class="px-4 py-2 bg-emerald-500 text-white rounded-full text-sm">Accountability</span>
+            <span class="px-4 py-2 bg-rose-500 text-white rounded-full text-sm">Excellence</span>
+            <span class="px-4 py-2 bg-yellow-400 text-gray-800 rounded-full text-sm">Transparency</span>
+            <span class="px-4 py-2 bg-gray-500 text-white rounded-full text-sm">Risk Consciousness</span>
+            <span class="px-4 py-2 bg-[#24b0ed] text-white rounded-full text-sm">Teamwork</span>
+          </div>
+
+          <div *ngIf="activeTab === 'vision'" class="mt-4 text-gray-700 text-base leading-relaxed">
+            To be a leading enabler of a risk-conscious culture, fostering resilience, sustainability, and strategic growth across Chinhoyi University of Technology and its Strategic Business Units.
+          </div>
+
+          <div *ngIf="activeTab === 'mission'" class="mt-4 text-gray-700 text-base leading-relaxed">
+            To provide proactive risk oversight, promote risk awareness, and strengthen risk management capabilities through continuous monitoring, training, and innovative strategies.
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-10">
+          <a routerLink="/about" class="inline-flex items-center text-[#24b0ed] font-semibold hover:underline transition">
+            Learn more about us
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

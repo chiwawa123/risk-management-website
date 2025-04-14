@@ -1,0 +1,18 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000a3; /* Black with 50% opacity */ /* Ensure the overlay sits above the image but below content */
+}
+
+.max-w-2xl {
+  z-index: 1;
+  position: relative;
+
+}
+.gold {
+  border-top: 1px solid #caa350;
+  border-bottom: 1px solid #caa350;
+}
