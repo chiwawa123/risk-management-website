@@ -84,7 +84,7 @@ export class DownloadsComponent  implements OnInit {
     {
       id: "si-155-2024",
       title: "SI 155/2024",
-      description: "Statutory Instrument on Risk Management Requirements for Educational Institutions",
+      description: "SI 155 of 2024 establishes a framework for licensing data protection entities and appointing Data Protection Officers in Zimbabwe",
       fileType: "pdf",
       fileSize: "890 KB",
       downloadCount: 432,
