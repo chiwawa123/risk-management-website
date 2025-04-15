@@ -1,47 +1,26 @@
-<section class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-12 relative overflow-hidden">
-  <div class="absolute inset-0 bg-pattern opacity-10"></div>
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h1 class="text-4xl font-bold mb-2">Our Services</h1>
-        <p class="text-gray-300 text-lg">Our top business services to help you manage and mitigate risks effectively</p>
-      </div>
-      <div class="flex justify-start md:justify-end">
-        <nav class="flex" aria-label="Breadcrumb">
-          <ol class="inline-flex items-center space-x-1 md:space-x-3">
-            <li class="inline-flex items-center">
-              <a routerLink="" class="text-gray-300 hover:text-white inline-flex items-center">
-                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-                </svg>
-                Home
-              </a>
-            </li>
-            <li aria-current="page">
-              <div class="flex items-center">
-                <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                <span class="text-gray-200 ml-1 md:ml-2 font-medium">Services</span>
-              </div>
-            </li>
-          </ol>
-        </nav>
-      </div>
+
+<section class="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute inset-0 bg-pattern opacity-10"></div>
+    <div class="absolute -bottom-8 left-0 right-0 h-20 bg-white" style="clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 100%);"></div>
+  </div>
+  <div class="container mx-auto px-4 py-20 relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Our Services</h1>
+      <p class="text-xl text-gray-300 mb-8">
+        Our top business services to help you manage and mitigate risks effectively
+      </p>
+
     </div>
   </div>
 </section>
+
 <section class="py-24 bg-white text-gray-800 relative">
   <div class="container mx-auto px-6">
 
     <div class="py-12 px-4 bg-gray-30">
       <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Risk Management Services</h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our comprehensive approach to identifying, assessing, and mitigating risks to protect your organization.
-          </p>
-        </div>
+
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div *ngFor="let service of services"
@@ -64,12 +43,7 @@
                      [alt]="service.title"
                      class="w-full h-full object-cover rounded-b-2xl transition-transform duration-500 hover:scale-105">
               </div>
-              <div class="absolute inset-0 bg-[#24b0ed]/70 opacity-0 hover:opacity-100 flex items-center justify-center rounded-b-2xl transition-opacity duration-300 backdrop-blur-sm">
-                <a routerLink="/services"
-                   class="bg-white text-[#24b0ed] font-medium py-2.5 px-6 rounded-lg shadow hover:bg-gray-50 transition transform hover:scale-105 duration-300">
-                  Learn More
-                </a>
-              </div>
+         
             </div>
           </div>
         </div>

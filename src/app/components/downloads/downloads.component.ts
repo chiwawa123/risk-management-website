@@ -55,7 +55,7 @@ export class DownloadsComponent  implements OnInit {
       lastUpdated: "15 Mar 2024",
       category: "policies",
       featured: true,
-      url: "/assets/documents/risk-policy.pdf",
+      url: "/assets/files/risk-policy.pdf",
     },
     {
       id: "risk-framework",
@@ -67,7 +67,7 @@ export class DownloadsComponent  implements OnInit {
       lastUpdated: "10 Apr 2024",
       category: "frameworks",
       featured: true,
-      url: "/assets/documents/risk-framework.pdf",
+      url: "/assets/files/risk-framework.pdf",
     },
     {
       id: "data-protection-act",
@@ -79,7 +79,7 @@ export class DownloadsComponent  implements OnInit {
       lastUpdated: "22 Jan 2024",
       category: "legislation",
       featured: true,
-      url: "/assets/documents/data-protection-act.pdf",
+      url: "/assets/files/act.pdf",
     },
     {
       id: "si-155-2024",
@@ -91,7 +91,7 @@ export class DownloadsComponent  implements OnInit {
       lastUpdated: "05 May 2024",
       category: "legislation",
       new: true,
-      url: "/assets/documents/si-155-2024.pdf",
+      url: "/assets/files/si.pdf",
     },
 
     {
