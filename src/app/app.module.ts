@@ -12,6 +12,7 @@ import { DownloadsComponent } from './components/downloads/downloads.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { StaffComponent } from './components/staff/staff.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { StaffComponent } from './components/staff/staff.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
