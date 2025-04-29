@@ -41,11 +41,21 @@ export class HomeComponent {
         id: "evaluation",
         title: "Risk Evaluation",
         description:
-          "The Risk Management Team also develop and implement strategies and actions to modify the identified risks. The common risk treatment options which may be given includes, risk avoidance which is.....",
+          "The Risk Management Team also develop and implement strategies and actions to modify the identified risks.....",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
               </svg>`,
         image: "assets/images/ev.jpg",
+      },
+      {
+        id: "treatment",
+        title: "Risk Treatment",
+        description:
+          "The Risk Management Team also develop and implement strategies and actions to modify the....",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>`,
+              image: "assets/images/treatment.png",
       },
     ]
 

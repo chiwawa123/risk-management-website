@@ -10,3 +10,7 @@
 .text-primary-600 {
   color: #2563eb;
 }
+
+.bg-black {
+  background-color:#00000089 !important;
+}

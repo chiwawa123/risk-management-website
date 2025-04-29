@@ -1,25 +1,11 @@
-
 <section>
   <div class="bg-[#24b0ed] text-white py-1 px-4 flex justify-between items-center text-sm">
-
-
-    <!-- <div class="flex space-x-4">
-      <a href="#" class="hover">Contact Us</a>
-      <a href="#" class="hover">About Us</a>
-    </div>
-
-
-    <div class="flex space-x-4">
-      <span>Ext: 1194</span>
-      <span>Email: rmu&#64;cut.ac.zw</span>
-    </div> -->
-
+    <!-- Optional Top Bar -->
   </div>
 </section>
 
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-
     <!-- Logo -->
     <a routerLink="/" class="text-xl font-bold text-gray-800 flex items-center">
       <img src="assets/images/logo.png" alt="Logo" class="h-9 w-9 mr-2">
@@ -48,20 +34,73 @@
       </li>
     </ul>
 
-    <!-- Optional CTA or Search -->
+    <!-- Search Bar and Get in Touch Button -->
     <div class="hidden md:flex items-center space-x-4">
-      <a routerLink="/contact" class="px-4 py-2 bg-[#24b0ed] text-white rounded-lg text-sm font-medium hover:bg-[#1a9ed4] transition shadow-md">
+      <div class="relative">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="px-4 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#24b0ed]"
+        />
+        <button class="absolute right-2 top-2 text-gray-500 hover:text-gray-700">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 16l-4-4m0 0l4-4m-4 4h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <a
+        routerLink="/contact"
+        class="px-4 py-2 bg-[#24b0ed] text-white rounded-lg text-sm font-medium hover:bg-[#1a9ed4] transition shadow-md"
+      >
         Get in Touch
       </a>
     </div>
 
     <!-- Mobile Menu Button -->
-    <button (click)="toggleMobileMenu()" class="md:hidden text-gray-700 focus:outline-none transition transform hover:scale-110">
-      <svg *ngIf="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    <button
+      (click)="toggleMobileMenu()"
+      class="md:hidden text-gray-700 focus:outline-none transition transform hover:scale-110"
+    >
+      <svg
+        *ngIf="!mobileMenuOpen"
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-7 w-7"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
       </svg>
-      <svg *ngIf="mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      <svg
+        *ngIf="mobileMenuOpen"
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-7 w-7"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        />
       </svg>
     </button>
   </nav>
@@ -69,12 +108,49 @@
   <!-- Mobile Menu -->
   <div *ngIf="mobileMenuOpen" class="md:hidden bg-white shadow-lg">
     <div class="container mx-auto px-4 py-4 space-y-4 text-sm font-medium">
-      <a routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active-nav" class="mobile-link" (click)="toggleMobileMenu()">Home</a>
-      <a routerLink="/about" routerLinkActive="active-nav" class="mobile-link" (click)="toggleMobileMenu()">About</a>
-      <a routerLink="/downloads" routerLinkActive="active-nav" class="mobile-link" (click)="toggleMobileMenu()">Downloads</a>
-      <a routerLink="/services" routerLinkActive="active-nav" class="mobile-link" (click)="toggleMobileMenu()">Services</a>
-      <a routerLink="/staff" routerLinkActive="active-nav" class="mobile-link" (click)="toggleMobileMenu()">Staff</a>
-      <a routerLink="/contact" routerLinkActive="active-nav" class="mobile-link" (click)="toggleMobileMenu()">Contact</a>
+      <a
+        routerLink="/"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active-nav"
+        class="mobile-link"
+        (click)="toggleMobileMenu()"
+        >Home</a
+      >
+      <a
+        routerLink="/about"
+        routerLinkActive="active-nav"
+        class="mobile-link"
+        (click)="toggleMobileMenu()"
+        >About</a
+      >
+      <a
+        routerLink="/downloads"
+        routerLinkActive="active-nav"
+        class="mobile-link"
+        (click)="toggleMobileMenu()"
+        >Downloads</a
+      >
+      <a
+        routerLink="/services"
+        routerLinkActive="active-nav"
+        class="mobile-link"
+        (click)="toggleMobileMenu()"
+        >Services</a
+      >
+      <a
+        routerLink="/staff"
+        routerLinkActive="active-nav"
+        class="mobile-link"
+        (click)="toggleMobileMenu()"
+        >Staff</a
+      >
+      <a
+        routerLink="/contact"
+        routerLinkActive="active-nav"
+        class="mobile-link"
+        (click)="toggleMobileMenu()"
+        >Contact</a
+      >
     </div>
   </div>
 </header>

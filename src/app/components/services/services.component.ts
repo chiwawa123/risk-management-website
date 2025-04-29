@@ -45,6 +45,15 @@ export class ServicesComponent {
       id: ''
     },
 
-  ]
+  ];
+  selectedService: any = null;
+
+  openModal(service: any) {
+    this.selectedService = service;
+  }
+
+  closeModal() {
+    this.selectedService = null;
+  }
 
 }
