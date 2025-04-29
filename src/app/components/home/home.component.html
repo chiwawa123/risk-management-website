@@ -86,25 +86,28 @@
   </div>
 </section>
 
+<section class="py-16 md:py-24 bg-gradient-to-br from-white via-sky-50 to-white text-gray-800 relative overflow-hidden">
+  <!-- Background Decorations -->
+  <svg class="absolute -top-20 -left-20 w-24 h-24 md:w-32 md:h-32 text-[#24b0ed]/10" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 2a10 10 0 00-7.07 17.07A10 10 0 1012 2z" />
+  </svg>
+  <svg class="absolute -bottom-20 -right-20 w-20 h-20 md:w-24 md:h-24 text-sky-300/10" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M5 3a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V7.828a2 2 0 00-.586-1.414l-4.828-4.828A2 2 0 0014.172 1H5zm7 6a1 1 0 112 0v6a1 1 0 11-2 0V9zm-4 0a1 1 0 112 0v6a1 1 0 11-2 0V9z" />
+  </svg>
 
-<section class="py-24 bg-gradient-to-br from-white via-sky-50 to-white text-gray-800 relative">
-  <!-- Decorative Blur Circles -->
-  <div class="absolute -top-32 -left-32 w-96 h-96 bg-[#24b0ed] opacity-20 rounded-full blur-[120px] pointer-events-none"></div>
-  <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-sky-300 opacity-10 rounded-full blur-2xl pointer-events-none"></div>
-
-  <div class="container mx-auto px-6 relative z-10">
-    <!-- Section Header -->
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-extrabold mb-4 text-gray-900">Services We Provide</h2>
-      <div class="w-16 h-1 bg-[#24b0ed] mx-auto rounded-full"></div>
-      <p class="text-gray-600 mt-4 text-base">
+  <div class="container mx-auto px-4 md:px-6 relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-10 md:mb-16">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-3 text-gray-900">Services We Provide</h2>
+      <div class="w-12 h-1 md:w-16 bg-[#24b0ed] mx-auto rounded-full"></div>
+      <p class="text-gray-600 mt-3 text-sm md:text-base">
         Explore the wide range of services we offer to help you manage risks effectively and achieve your goals.
       </p>
     </div>
 
     <!-- Services Grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div *ngFor="let service of services" class="relative group bg-white border border-gray-100 rounded-xl shadow-md overflow-hidden transition-transform transform hover:scale-105">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <div *ngFor="let service of services" class="group bg-white border border-gray-100 rounded-xl shadow-md overflow-hidden transition-transform transform hover:scale-105">
         <!-- Image -->
         <div class="relative">
           <img [src]="service.image" [alt]="service.title" class="w-full h-24 object-cover">
@@ -113,9 +116,9 @@
 
         <!-- Content -->
         <div class="p-3">
-          <!-- Icon -->
+          <!-- Font Awesome Icon -->
           <div class="w-8 h-8 bg-[#e8f7fd] text-[#24b0ed] rounded-lg flex items-center justify-center mb-2 text-lg shadow-inner">
-            <span [innerHTML]="service.icon"></span>
+            <i [class]="service.iconClass"></i>
           </div>
           <h3 class="text-sm font-semibold mb-1 text-gray-900">{{ service.title }}</h3>
           <p class="text-gray-600 text-xs mb-2">{{ service.description }}</p>
@@ -124,8 +127,8 @@
       </div>
     </div>
 
-    <!-- CTA Button -->
-    <div class="text-center mt-12">
+    <!-- CTA -->
+    <div class="text-center mt-10 md:mt-12">
       <a routerLink="/services" class="inline-flex items-center bg-[#24b0ed] text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-[#1aa2d6] transition text-sm">
         View All Services
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
