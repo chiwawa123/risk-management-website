@@ -1,43 +1,41 @@
-<section >
-  <div class="relative text-white text-sm overflow-hidden rounded-b-[10px] ">
-
+<section>
+  <div class="relative text-white text-sm overflow-hidden rounded-b-[10px] min-h-[50px]">
 
     <!-- Background Layer Split -->
-    <div class="absolute inset-0 flex">
+    <div class="absolute inset-0 flex z-0">
       <div class="bg-[#24b0ed] w-3/4"></div>
       <div class="bg-[#caa350] w-1/3"></div>
     </div>
 
     <!-- Glass-like Overlay Content -->
-    <div class="relative z-10 flex justify-between items-center px-4 py-2 backdrop-blur-sm bg-white/10">
+    <div class="relative z-10 flex flex-col sm:flex-row justify-between items-center px-4 py-2 backdrop-blur-sm bg-white/10 space-y-2 sm:space-y-0">
 
       <!-- Left: Contact Info -->
-      <div class="flex space-x-4 items-center">
+      <div class="flex flex-wrap space-x-4 items-center justify-center sm:justify-start">
         <span class="flex items-center space-x-1">
           <i class="fas fa-phone-alt text-xs"></i><span>1194</span>
         </span>
-        <span class="flex items-center space-x-1">
-          <i class="fas fa-envelope text-xs"></i><span>rmu&#64;cutac.zw</span>
+        <span class="flex items-center space-x-1 select-none">
+          <i class="fas fa-envelope text-xs"></i>
+          <span>rmu&#64;cutac.zw</span>
         </span>
+        
       </div>
 
       <!-- Right: Links + Icons -->
-      <div class="flex items-center space-x-5">
+      <div class="flex flex-wrap items-center justify-center sm:justify-end space-x-4 sm:space-x-5">
         <a href="https://www.cut.ac.zw" target="_blank" class="hover:underline flex items-center space-x-1">
           <i class="fas fa-globe"></i>
           <span>CUT Website</span>
         </a>
-        <a href="/faqs" class="hover:underline flex items-center space-x-1">
-          <i class="fas fa-question-circle"></i>
-          <span>FAQs</span>
-        </a>
-        <a href="https://mail.cut.ac.zw" target="_blank" class="hover:underline flex items-center space-x-1">
+      
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="hover:underline flex items-center space-x-1">
           <i class="fas fa-envelope-open-text"></i>
           <span>CUT Mail</span>
         </a>
 
         <!-- Social Icons -->
-        <div class="flex space-x-3 ml-3 text-white">
+        <div class="flex space-x-3 text-white">
           <a href="#" title="Facebook" class="hover:scale-110 transition duration-150"><i class="fab fa-facebook-f"></i></a>
           <a href="#" title="Twitter" class="hover:scale-110 transition duration-150"><i class="fab fa-twitter"></i></a>
           <a href="#" title="LinkedIn" class="hover:scale-110 transition duration-150"><i class="fab fa-linkedin-in"></i></a>
